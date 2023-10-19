@@ -76,7 +76,7 @@ body {
 
 .viewport .column:nth-child(2) {
     flex: 4;
-    margin: .4rem .25rem;
+    margin: .4rem .25rem 0;
 }
 
 .panel {
@@ -100,6 +100,6 @@ body {
 
 h3 {
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.25rem;
 }
