@@ -11,7 +11,7 @@
     <script src="js/echarts.min.js"></script>
     <script src="js/flexible.js"></script>
     <script src="js/jquery.min.js"></script>
-
+    <script src="js/china.js"></script>
 </head>
 
 <body>
@@ -317,37 +317,80 @@
                 <div class="channel panel">
                     <div class="inner">
                         <h3>渠道分布</h3>
-                        <div class="data">
-                            <div class="item">
-                                <h4>39<span>%</span></h4>
-                                <span class="title"><i class="iconfont icon-plane"></i> 机场</span>
-                            </div>
-                            <div class="item">
-                                <h4>28<span>%</span></h4>
-                                <span class="title"><i class="iconfont icon-bag"></i> 商场</span>
-                            </div>
-                            <div class="item">
-                                <h4>20<span>%</span></h4>
-                                <span class="title"><i class="iconfont icon-train"></i> 地铁</span>
-                            </div>
-                            <div class="item">
-                                <h4>13<span>%</span></h4>
-                                <span class="title"><i class="iconfont icon-bus"></i> 火车站</span>
-                            </div>
-                        </div>
+                        <div class="radar"></div>
                     </div>
                 </div>
                 <!-- 销售进度 -->
                 <div class="quarter panel">
                     <div class="inner">
                         <h3>一季度销售进度</h3>
+                        <div class="chart">
+                            <div class="gauge">半圆</div>
+                            <div class="label">50 <small>%</small> </div>
+                        </div>
+                        <div class="data">
+                            <div class="item">
+                                <h4>1,321</h4>
+                                <span><i class="iconfont icon-dot" style="color: #f00;"></i>销售额(万元)</span>
+                            </div>
+                            <div class="item">
+                                <h4>150%</h4>
+                                <span><i class="iconfont icon-dot" style="color: green;"></i>同比增长</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!--排行-->
             <div class="top panel">
                 <div class="inner">
-                    --排行--
+                    <div class="all">
+                        <h3>全国热榜</h3>
+                        <ul>
+                            <li>
+                                <i class="icon-cup1" style="color: #d93f36;"></i>
+                                可爱多
+                            </li>
+                            <li>
+                                <i class="icon-cup2" style="color: #68d8fe;"></i>
+                                娃哈啥
+                            </li>
+                            <li>
+                                <i class="icon-cup3" style="color: #4c9bfd;"></i>
+                                喜之郎
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="province">
+                        <h3>各省热销 <i class="date">// 近30日 //</i></h3>
+                        <div class="data">
+                            <ul class="sup">
+                                <li>
+                                    <span>北京</span>
+                                    <span>25,179 <s class="icon-up"></s></span>
+                                </li>
+                                <li>
+                                    <span>河北</span>
+                                    <span>23,252 <s class="icon-down"></s></span>
+                                </li>
+                                <li>
+                                    <span>上海</span>
+                                    <span>20,760 <s class="icon-up"></s></span>
+                                </li>
+                                <li>
+                                    <span>江苏</span>
+                                    <span>23,252 <s class="icon-down"></s></span>
+                                </li>
+                                <li>
+                                    <span>山东</span>
+                                    <span>20,760 <s class="icon-up"></s></span>
+                                </li>
+                            </ul>
+                            <ul class="sub">
+                                <li><span></span><span> <s class="icon-up"></s></span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -355,4 +398,5 @@
 </body>
 
 </html>
+<script src="js/map.js"></script>
 <script src="js/index.js"></script>
